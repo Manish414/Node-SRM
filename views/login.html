@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Student Result Portal</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark"> Student Result Portal <i
+                            class="fa-solid fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i>Home</a>
+                </div>
+
+                <div class="filter">
+                    <a href="/register">New User.. Register here<i class="fas fa-angle-double-right"></i></a>
+                </div>
+
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Login</h2>
+            </div>
+
+            <form method="POST" action="/api/login" id="register">
+                <div class="newRecord">
+                    <div class="form-group">
+                        <label for="semester" class="text-light">Email</label>
+                        <input type="email" name="email" value="" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="score" class="text-light">Password</label>
+                        <input type="password" name="password" value="" placeholder="********" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark add">Login</button>
+                    </div>
+            </div>
+        </div>
+        </form>
+        <div id="errorMessage" class="error-message"></div>
+        </div>
+    </main>
+<script src="/js/login.js"></script>
+</body>
+
+</html>

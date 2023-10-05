@@ -1,0 +1,25 @@
+exports.homeRoutes=(req,res)=>{
+    res.render('index')
+}
+exports.addRoutes=(req,res)=>{
+    res.render('addRecord')
+}
+exports.updateRoutes=(req,res)=>{
+    res.render('updateRecord')
+}
+exports.recordsRoutes=(req,res)=>{
+    res.render('records')
+}
+exports.registerRoutes=(req,res)=>{
+    res.render('register')
+}
+exports.loginRoutes=(req,res)=>{
+    
+    res.render('login')
+}
+exports.searchRoutes=(req,res)=>{
+    res.render('result')
+}
+exports.teacherLoginRoutes=(req,res)=>{
+    res.render('teacherLogin')
+}

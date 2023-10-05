@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Student Result Portal</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center ">
+                    <a class="nav-brand text-dark"> Student Result Portal <i
+                            class="fa-solid fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="cont">
+            <button id="logoutButton" class="corner-button">Logout</button>
+        </div>
+
+    </header>
+
+    <main id="site-main">
+        <div class="container">
+
+            <div class="box-nav d-flex justify-between">
+                <a href="/addRecord" class="border-shadow">
+                    <span class="text-gradient">Add New Record</span>
+                </a>
+            </div>
+
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>NAME</th>
+                            <th>ROLL NO</th>
+                            <th>DOB</th>
+                            <th>SEMESTER</th>
+                            <th>SCORE</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recordTable">
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </main>
+    <script src="/js/fetch.js"></script>
+</body>
+
+</html>

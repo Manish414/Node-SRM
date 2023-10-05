@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Student Result Portal</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a  class="nav-brand text-dark"> Student Result Portal <i
+                            class="fa-solid fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="cont">
+            <button id="logoutButton" class="corner-button">Logout</button>
+        </div>
+
+    </header>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/records"><i class="fas fa-angle-double-left"></i>All Records</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">New Record</h2>
+            </div>
+
+            <form method="POST" action="/api/record" id="addRecord">
+                <div class="newRecord">
+                    <div class="form-group">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="text" name="name" value="" placeholder="Manish">
+                    </div>
+                    <div class="form-group">
+                        <label for="rollno" class="text-light">Roll No</label>
+                        <input type="number" name="rollno" value="" placeholder="056156">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob" class="text-light">Date of Birth</label>
+                        <input type="date" name="dob" value="" placeholder="2000-10-13">
+                    </div>
+                    <div class="form-group">
+                        <label for="semester" class="text-light">Semester</label>
+                        <input type="number" name="semester" value="" placeholder="10" min="1" max="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="score" class="text-light">Score</label>
+                        <input type="number" name="score" value="" placeholder="10" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark add">Save</button>
+                    </div>
+
+                </div>
+        </div>
+        </form>
+
+        </div>
+    </main>
+    <script src="/js/fetch.js"></script>
+</body>
+
+</html>
